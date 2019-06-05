@@ -1,0 +1,31 @@
+<div class="dia-container">
+  <h2 mat-dialog-title>Log In</h2>
+
+  <mat-dialog-content class="logInForm">
+    <mat-form-field [hideRequiredMarker]="true" class="full-width-field">
+      <input [(ngModel)]="account" matInput placeholder="Account" required [formControl]="AccountControl"/>
+      <mat-error>本帳號不存在!</mat-error>
+    </mat-form-field>
+
+    <mat-form-field [hideRequiredMarker]="true" class="full-width-field">
+      <input [(ngModel)]="password" matInput placeholder="Password" required [formControl]="PasswordControl"
+        [type]="hide ? 'password' : 'text'" />
+        <mat-error>密碼有誤!</mat-error>
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        
+      </button>
+    </mat-form-field>
+    <div align="right">
+        <a style="color:blue; text-decoration:underline; font-size: 12px" >Forget Password?</a>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+
+    <span class="toolbar-seprator"></span>
+    <button mat-button color="primary" (click)="ToCheckAccount()">登入</button>
+    <button mat-button color="primary" (click)="Register()">註冊</button>
+  </mat-dialog-actions>
+</div>
