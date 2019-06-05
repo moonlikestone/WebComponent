@@ -31,7 +31,7 @@ export class NavbarComponent implements OnInit {
       else if(res == "Register"){
         let registerDia = this.dialog.open(RegisterDiaComponent,{
           height: '45%',
-          width: '30%',
+          width: '30%'
         });
       }
       else{
