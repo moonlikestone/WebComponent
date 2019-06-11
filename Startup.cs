@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebComponent.Models;
+using WebComponent.Models.Database.Repositories;
 
 namespace WebComponent
 {
@@ -24,9 +25,7 @@ namespace WebComponent
         {
             services.AddMemoryCache();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddDbContext<DBContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("UsedDB")));
-            // In production, the Angular files will be served from this directory
+            services.AddTransient<IMemberRepository, MemberRepository>();
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
