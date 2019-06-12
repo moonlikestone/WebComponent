@@ -18,11 +18,11 @@ export class LoginDiaService {
   }
 
   checkAccount(account:string, password: string){
-    return this.http.post("https://localhost:5001/api/Member/CheckAccount", { Account: account, Password: password })
+    return this.http.post("api/Member/CheckAccount", { Account: account, Password: password })
     .pipe(map(data=> JSON.stringify(data)));
   }
   updateLogTime(account:string){
-    return this.http.post("https://localhost:5001/api/Members/UpdateLogTime", {Account: account})
+    return this.http.post("api/Members/UpdateLogTime", {Account: account})
     .pipe(map(data => JSON.stringify(data)));
   }
 }
