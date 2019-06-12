@@ -6,11 +6,7 @@ namespace WebComponent.Models
     public partial class DownloadRecord
     {
         public string Downloader { get; set; }
-        public DateTime Time { get; set; }
-        public Guid FileId { get; set; }
-        public long RecordId { get; set; }
-
-        public virtual Member DownloaderNavigation { get; set; }
-        public virtual ComponentFile File { get; set; }
+        public string Time { get; set; }
+        public string FileId { get; set; }
     }
 }
