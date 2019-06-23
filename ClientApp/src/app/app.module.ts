@@ -20,6 +20,7 @@ import { UserInfoComponent } from './Components/user-info/user-info.component';
 import { ManagerInfoComponent } from './Components/manager-info/manager-info.component';
 import { ManufacturerInfoComponent } from './Components/manufacturer-info/manufacturer-info.component';
 import { from } from 'rxjs';
+import {MatTreeModule} from '@angular/material/tree';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { from } from 'rxjs';
     SharedMaterialModuleModule,
     FormsModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTreeModule
   ],
   providers: [
     {provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'auto' }},
