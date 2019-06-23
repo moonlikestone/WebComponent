@@ -1,3 +1,62 @@
-<p>
-  search works!
-</p>
+<pre></pre>
+
+<a mat-raised-button color="primary" style="width:180px;">Classification</a>
+&nbsp; &nbsp; &nbsp;
+<button mat-icon-button >
+    <mat-icon>search</mat-icon>
+  </button>
+<mat-form-field value="1"  style="width:600px;" >
+  <input matInput placeholder="輸入關鍵字搜尋" >
+</mat-form-field>
+<pre></pre>
+
+<button mat-stroked-button color="warn" [matMenuTriggerFor]="messageMenu" style="width:150px;">   Vendor   </button>
+  <mat-menu #messageMenu="matMenu" xPosition="before" yPosition="above">
+      <button mat-menu-item>廠商A</button>
+      <button mat-menu-item>廠商B</button>
+      <button mat-menu-item>廠商C</button>
+      <button mat-menu-item>廠商D</button>
+      <button mat-menu-item>廠商E</button>
+      <button mat-menu-item>廠商F</button>
+      <button mat-menu-item>廠商G</button>
+      <button mat-menu-item>廠商H</button>
+      <button mat-menu-item>廠商I</button>
+      <button mat-menu-item>廠商J</button>
+    </mat-menu>
+    
+    <pre></pre>
+    <button mat-stroked-button color="warn" [matMenuTriggerFor]="CategoryMenu" style="width:150px;">Category</button>
+    <mat-menu #CategoryMenu="matMenu" xPosition="before" yPosition="above">
+      <button mat-menu-item>門</button>
+      <button mat-menu-item>窗戶</button>
+      <button mat-menu-item>管線</button>
+      <button mat-menu-item>電子電器</button>
+      <button mat-menu-item>機械</button>
+      <button mat-menu-item>景觀</button>
+      <button mat-menu-item>運動與娛樂</button>
+      <button mat-menu-item>消防</button>
+      <button mat-menu-item>照明</button>
+      <button mat-menu-item>家具</button>
+      <button mat-menu-item>階梯</button>
+      <button mat-menu-item>建築材料</button>
+      <button mat-menu-item>地板</button>
+      <button mat-menu-item>天花板</button>
+      <button mat-menu-item>廚房</button>
+      <button mat-menu-item>衛生</button>
+      <button mat-menu-item>階梯</button>
+    
+    </mat-menu>
+
+    <pre></pre>
+    <button mat-stroked-button color="warn" [matMenuTriggerFor]="TypeMenu"style="width:150px;" >Type</button>
+    <mat-menu #TypeMenu="matMenu" xPosition="before" yPosition="above">
+        <button mat-menu-item>Revit</button>
+        <button mat-menu-item>3DS</button>
+        <button mat-menu-item>ifc</button>
+        <button mat-menu-item>ArchiCad</button>
+        <button mat-menu-item>Sketchup</button>
+
+      </mat-menu>
+
+
+     
