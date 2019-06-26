@@ -8,55 +8,125 @@
 <mat-form-field value="1"  style="width:600px;" >
   <input matInput placeholder="輸入關鍵字搜尋" >
 </mat-form-field>
-<pre></pre>
 
-<button mat-stroked-button color="warn" [matMenuTriggerFor]="messageMenu" style="width:150px;">   Vendor   </button>
-  <mat-menu #messageMenu="matMenu" xPosition="before" yPosition="above">
-      <button mat-menu-item>廠商A</button>
-      <button mat-menu-item>廠商B</button>
-      <button mat-menu-item>廠商C</button>
-      <button mat-menu-item>廠商D</button>
-      <button mat-menu-item>廠商E</button>
-      <button mat-menu-item>廠商F</button>
-      <button mat-menu-item>廠商G</button>
-      <button mat-menu-item>廠商H</button>
-      <button mat-menu-item>廠商I</button>
-      <button mat-menu-item>廠商J</button>
-    </mat-menu>
-    
-    <pre></pre>
-    <button mat-stroked-button color="warn" [matMenuTriggerFor]="CategoryMenu" style="width:150px;">Category</button>
-    <mat-menu #CategoryMenu="matMenu" xPosition="before" yPosition="above">
-      <button mat-menu-item>門</button>
-      <button mat-menu-item>窗戶</button>
-      <button mat-menu-item>管線</button>
-      <button mat-menu-item>電子電器</button>
-      <button mat-menu-item>機械</button>
-      <button mat-menu-item>景觀</button>
-      <button mat-menu-item>運動與娛樂</button>
-      <button mat-menu-item>消防</button>
-      <button mat-menu-item>照明</button>
-      <button mat-menu-item>家具</button>
-      <button mat-menu-item>階梯</button>
-      <button mat-menu-item>建築材料</button>
-      <button mat-menu-item>地板</button>
-      <button mat-menu-item>天花板</button>
-      <button mat-menu-item>廚房</button>
-      <button mat-menu-item>衛生</button>
-      <button mat-menu-item>階梯</button>
-    
-    </mat-menu>
-
-    <pre></pre>
-    <button mat-stroked-button color="warn" [matMenuTriggerFor]="TypeMenu"style="width:150px;" >Type</button>
-    <mat-menu #TypeMenu="matMenu" xPosition="before" yPosition="above">
-        <button mat-menu-item>Revit</button>
-        <button mat-menu-item>3DS</button>
-        <button mat-menu-item>ifc</button>
-        <button mat-menu-item>ArchiCad</button>
-        <button mat-menu-item>Sketchup</button>
-
-      </mat-menu>
-
-     
+      <mat-nav-list style="width:180px;">
+          <mat-accordion>
+      <mat-expansion-panel hideToggle="true">
+          <mat-expansion-panel-header>
+             品牌
+          </mat-expansion-panel-header>
+          
+          <a mat-list-item>
+              廠商A
+            </a>
+            <a mat-list-item>
+                廠商B
+            </a>
+            <a mat-list-item>
+                廠商C
+            </a>
+            <a mat-list-item>
+                廠商D
+            </a>
+            <a mat-list-item>
+                廠商E
+            </a>
+            <a mat-list-item>
+                廠商F
+            </a>
+            <a mat-list-item>
+                廠商G
+            </a>
+            <a mat-list-item>
+                廠商H
+            </a>
+            <a mat-list-item>
+                廠商I
+            </a>
+            <a mat-list-item>
+                廠商J
+            </a>
+          
+        </mat-expansion-panel >
       
+        <mat-expansion-panel hideToggle="true">
+            <mat-expansion-panel-header>
+               對象類型
+            </mat-expansion-panel-header>
+            
+            <a mat-list-item>
+                  門
+              </a>
+              <a mat-list-item>
+                 窗戶
+              </a>
+              <a mat-list-item>
+                管線
+              </a>
+              <a mat-list-item>
+                  電子電器
+              </a>
+              <a mat-list-item>
+                 機械
+              </a>
+              <a mat-list-item>
+                  景觀
+              </a>
+              <a mat-list-item>
+                  運動與娛樂
+              </a>
+              <a mat-list-item>
+                  消防
+              </a>
+              <a mat-list-item>
+                  照明
+              </a>
+              <a mat-list-item>
+                  家具
+              </a>
+              <a mat-list-item>
+                  階梯
+              </a>
+              <a mat-list-item>
+                  建築材料
+              </a>
+              <a mat-list-item>
+                  地板
+              </a>
+              <a mat-list-item>
+                  天花板
+              </a>
+              <a mat-list-item>
+                  廚房
+              </a>
+              <a mat-list-item>
+                  衛生
+              </a>
+            
+          </mat-expansion-panel >
+          <mat-expansion-panel hideToggle="true">
+              <mat-expansion-panel-header>
+                 文件分類
+              </mat-expansion-panel-header>
+              
+              <a mat-list-item>
+                    REVIT
+                </a>
+                <a mat-list-item>
+                    3DS
+                </a>
+                <a mat-list-item>
+                    ArchiCAD
+                </a>
+                <a mat-list-item>
+                    SKetchup
+                </a>
+                <a mat-list-item>
+                    IFC
+                </a>
+                
+               
+              
+            </mat-expansion-panel >
+          </mat-accordion>
+      </mat-nav-list>

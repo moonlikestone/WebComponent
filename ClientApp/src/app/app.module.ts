@@ -21,6 +21,13 @@ import { ManagerInfoComponent } from './Components/manager-info/manager-info.com
 import { ManufacturerInfoComponent } from './Components/manufacturer-info/manufacturer-info.component';
 import { from } from 'rxjs';
 import {MatTreeModule} from '@angular/material/tree';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
+import {MatListModule} from '@angular/material';
+
 
 
 @NgModule({
@@ -44,7 +51,15 @@ import {MatTreeModule} from '@angular/material/tree';
     FormsModule,
     ReactiveFormsModule,
     MatMenuModule,
-    MatTreeModule
+    MatTreeModule,
+    MatExpansionModule,
+    DragDropModule,
+    ScrollingModule,
+    CdkTableModule,
+    CdkTreeModule,
+    MatListModule
+
+    
   ],
   providers: [
     {provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'auto' }},
