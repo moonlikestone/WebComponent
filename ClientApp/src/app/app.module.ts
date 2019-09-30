@@ -27,8 +27,9 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {MatListModule} from '@angular/material';
-
-
+import {MatGridListModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
+import {MatProgressBarModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,10 @@ import {MatListModule} from '@angular/material';
     ScrollingModule,
     CdkTableModule,
     CdkTreeModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatProgressBarModule
 
     
   ],
