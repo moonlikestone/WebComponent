@@ -1,150 +1,375 @@
 
-<button mat-icon-button >
-  <mat-icon>search</mat-icon>
-</button>
-
-<mat-form-field value="1"  style="width:200px;" >
-<input matInput placeholder="輸入關鍵字搜尋" >
-</mat-form-field>
-
+&nbsp;&nbsp;&nbsp;
 <pre></pre>
 
-<mat-grid-list style="width:1600px;" cols="6" rowHeight="600px">
-    <mat-grid-tile colspan="1">
+<mat-grid-list style="width:1400px;" cols="6" rowHeight="600px">
+    <mat-grid-tile colspan="1" rowspan="1">
 
 
     <mat-nav-list style="width:200px;height:600px;">
 
 
-<button mat-icon-button >
-  <mat-icon>house</mat-icon>
-</button>
-<button mat-button color="primary" (click)="ToCheckAccount()">首頁</button>
+
 <pre></pre>
 
 <button mat-icon-button >
-  <mat-icon>account_circle</mat-icon>
+  <mat-icon>perm_identity</mat-icon>
 </button>
-<button mat-button color="primary" (click)="ToCheckAccount()">管理介面操作手冊</button>
+<button mat-button color="primary" (click)="ToCheckAccount()">客戶資料</button>
 
+<pre></pre>
 
+<button mat-icon-button >
+  <mat-icon>list_alt</mat-icon>
+</button>
+<button mat-button color="primary" (click)="ToCheckAccount()">元件</button>
 
+<pre></pre>
 
+<button mat-icon-button >
+  <mat-icon>settings</mat-icon>
+</button>
+<button mat-button color="primary" (click)="ToCheckAccount()">偏好設定</button>
 
-    <mat-accordion>
-<mat-expansion-panel hideToggle="true">
-    <mat-expansion-panel-header>
-       主機服務
-    </mat-expansion-panel-header>
-    
-    <a mat-list-item>
-          <mat-icon>perm_identity
-          </mat-icon>
-        客戶資料
-      </a>
-      <a mat-list-item>
-          <mat-icon>location_city
-          </mat-icon>
-        代理商
-      </a>
-      <a mat-list-item>
-          <mat-icon>public
-          </mat-icon>
-        域名
-      </a>
-      <a mat-list-item>
-          <mat-icon>shop
-          </mat-icon>
-        訂閱
-      </a>
-      <a mat-list-item>
-          <mat-icon>list_alt
-          </mat-icon>
-        服務方案
-      </a>
-    
-  </mat-expansion-panel >
+<pre></pre>
 
-  <mat-expansion-panel hideToggle="true">
-      <mat-expansion-panel-header>
-         伺服器管理
-      </mat-expansion-panel-header>
-      
-      <a mat-list-item>
-            <mat-icon>build
-            </mat-icon>
-          工具與設定
-        </a>
-        <a mat-list-item>
-            <mat-icon>dashboard
-            </mat-icon>
-          擴展
-        </a>
-        <a mat-list-item>
-            <mat-icon>mail
-            </mat-icon>
-          信箱
-        </a>
-        <a mat-list-item>
-            <mat-icon>remove_red_eye
-            </mat-icon>
-          流量紀錄
-        </a>
-        <a mat-list-item>
-            <mat-icon>web
-            </mat-icon>
-          瀏覽紀錄分析
-        </a>
-      
-    </mat-expansion-panel >
-    <mat-expansion-panel hideToggle="true">
-        <mat-expansion-panel-header>
-           個人資料
-        </mat-expansion-panel-header>
-        
-        <a mat-list-item>
-              <mat-icon>settings
-              </mat-icon>
-            偏好設定
-          </a>
-          <a mat-list-item>
-              <mat-icon>history
-              </mat-icon>
-            登入記錄查詢
-          </a>
-         
-        
-      </mat-expansion-panel >
-
-    </mat-accordion>
 
 </mat-nav-list>
 
 </mat-grid-tile>
 
-  <mat-grid-tile colspan="4"> 
+  <mat-grid-tile colspan="5" rowspam="2"> 
 
-      <mat-card class="post-tile"  style="width:800px;height:500px;" [tabindex]="index" >
+      <mat-card class="post-tile"   [tabindex]="index" >
                       
           <mat-card-header>
-            
-            <mat-card-title>
-                Glass door</mat-card-title>
-            <mat-card-subtitle>Door</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="http://static.goujianwu.com/metadata/1229026101984832/thumbnails/512_0.png" width="350"height="200">
-<mat-card-content>
-            <p>
-              This is a door.
-            </p>
-          </mat-card-content>
+              <mat-card-title >
+                  &nbsp;
+                </mat-card-title>
+            <mat-card-title  style="font-family:標楷體;font-size:25px;" >
+                測試有限公司
+                <br>
+                TESTING TESTING 123 CO., LTD</mat-card-title>
+                <mat-card-subtitle>
+                    &nbsp;
+                </mat-card-subtitle>
+                <mat-card-subtitle>
+                    &nbsp;
+                </mat-card-subtitle>
+                <mat-card-subtitle>
+                    &nbsp;
+                </mat-card-subtitle>
+              </mat-card-header>
+
+              <img hspace="15"  layout="row" align="right" mat-card-image src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg" 
+          style="width:200px;height:200px;" >
+
+            <mat-card-subtitle  style="font-family:微軟正黑體;font-size:20px;">
+                &nbsp; &nbsp; &nbsp;
+              姓名  :  ABC
+          </mat-card-subtitle>
+          
+          <mat-card-subtitle>
+              &nbsp;
+          </mat-card-subtitle>
+          
+        
+         
+        <mat-card-subtitle style="font-family:微軟正黑體;font-size:20px;">
+            &nbsp; &nbsp; &nbsp;
+             電話 : 0900-000-000
+        </mat-card-subtitle>
+        
+        <mat-card-subtitle>
+            &nbsp;
+        </mat-card-subtitle>
+        <mat-card-subtitle style="font-family:微軟正黑體;font-size:20px;">
+            &nbsp; &nbsp; &nbsp;
+             傳真 : 0800-000-000
+        </mat-card-subtitle>
+        <mat-card-subtitle>
+            &nbsp;
+        </mat-card-subtitle>
+        <mat-card-subtitle style="font-family:微軟正黑體;font-size:20px;">
+            &nbsp; &nbsp; &nbsp;
+             地址 : XX市XX區XX路XX號
+        </mat-card-subtitle>
+          
+  
           <mat-card-actions>
-                  <button mat-icon-button >
-                          <mat-icon>cloud_download</mat-icon>
-                        </button>
-            <button mat-button>DOWNLOAD</button>
+                  
           </mat-card-actions>
           
         </mat-card>
+
       </mat-grid-tile>
     </mat-grid-list>
+
+
+
+
+
+
+    <mat-grid-list style="width:1400px;" cols="6" rowHeight="600px">
+      <mat-grid-tile colspan="1" rowspan="1">
+ 
+  </mat-grid-tile>
+  
+    <mat-grid-tile colspan="5" rowspam="2"> 
+  
+      <mat-card class="post-tile" style="width:220px;"  [tabindex]="index" >
+                                        
+        <mat-card-header>
+          
+          <mat-card-title>
+              Glass door</mat-card-title>
+          <mat-card-subtitle>Door</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="http://static.goujianwu.com/metadata/1229026101984832/thumbnails/512_0.png" width="350"height="200">
+<mat-card-content>
+          <p>
+            This is a door.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <p>
+            下載量
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2350
+          </p>
+          
+          <p>
+            &nbsp;
+          </p>
+
+          <p>
+            瀏覽量
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            3350
+          </p>
+
+          <p>
+            &nbsp;
+          </p>
+
+          <p>
+            上傳日期
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2018/12/31
+          </p>
+        </mat-card-actions>
+        
+      </mat-card>
+ 
+          <mat-card class="post-tile"  style="width:220px;" [tabindex]="index" >
+                        
+                <mat-card-header>
+                  
+                  <mat-card-title>
+                      Glass door</mat-card-title>
+                  <mat-card-subtitle>Door</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="http://static.goujianwu.com/metadata/1229026101984832/thumbnails/512_0.png" width="350"height="200">
+      <mat-card-content>
+                  <p>
+                    This is a door.
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <p>
+                    下載量
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    1002
+                  </p>
+                  
+                  <p>
+                    &nbsp;
+                  </p>
+
+                  <p>
+                    瀏覽量
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    1870
+                  </p>
+
+                  <p>
+                    &nbsp;
+                  </p>
+
+                  <p>
+                    上傳日期
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    2018/12/31
+                  </p>
+                </mat-card-actions>
+                
+              </mat-card>
+            
+
+             <mat-card class="post-tile"  style="width:220px;" [tabindex]="index" >
+                        
+                <mat-card-header>
+                  
+                  <mat-card-title>Elevator</mat-card-title>
+                  <mat-card-subtitle>Mechanical</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0YFnNjMr0UZ_FLsVlvY-p_-qT_Kl0iiiGtCkpA5Ezlt9UJfH" width="350"height="200">
+                <mat-card-content>
+                  <p>
+                    This is a elevator.
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <p>
+                    下載量
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    1001
+                  </p>
+                  
+                  <p>
+                    &nbsp;
+                  </p>
+
+                  <p>
+                    瀏覽量
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    1987
+                  </p>
+
+                  <p>
+                    &nbsp;
+                  </p>
+
+                  <p>
+                    上傳日期
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    2018/12/31
+                  </p>
+                </mat-card-actions>
+                
+              </mat-card>     
+
+              
+
+          <mat-card class="post-tile"  style="width:220px;" [tabindex]="index" >
+                        
+                <mat-card-header>
+                  
+                  <mat-card-title>Fire hydrant</mat-card-title>
+                  <mat-card-subtitle>
+                      Fire facilities</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="http://bim.tabc.org.tw/storage/assets/images/59df4770edfca521af2a5726486f6f3b.png" width="350"height="200">
+                <mat-card-content>
+                  <p>
+                    This is a fire hydrant.
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <p>
+                    下載量
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    999
+                  </p>
+                  
+                  <p>
+                    &nbsp;
+                  </p>
+
+                  <p>
+                    瀏覽量
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    1999
+                  </p>
+
+                  <p>
+                    &nbsp;
+                  </p>
+
+                  <p>
+                    上傳日期
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    2018/12/31
+                  </p>
+                </mat-card-actions>
+                
+              </mat-card>
+          
+          
+        </mat-grid-tile>
+      </mat-grid-list>
+
+
+    <mat-grid-list style="width:1400px;" cols="6" rowHeight="600px">
+      
+      <mat-grid-tile colspan="1" rowspan="1">
+
+
+      
+    
+    </mat-grid-tile>
+ <mat-grid-tile colspan="5" rowspam="2"> 
+
+    <mat-card class="post-tile"   [tabindex]="index" >
+                      
+        <mat-card-header>
+            <mat-card-title >
+                &nbsp;
+              </mat-card-title>
+          <mat-card-title  style="font-family:標楷體;font-size:25px;" >
+              &nbsp;
+              <br>
+              &nbsp;</mat-card-title>
+              <mat-card-subtitle>
+                  &nbsp;
+              </mat-card-subtitle>
+              <mat-card-subtitle>
+                  &nbsp;
+              </mat-card-subtitle>
+              <mat-card-subtitle>
+                  &nbsp;
+              </mat-card-subtitle>
+            </mat-card-header>
+
+  
+
+          <mat-card-subtitle  style="font-family:微軟正黑體;font-size:20px;">
+              &nbsp; &nbsp; &nbsp;
+            
+        </mat-card-subtitle>
+        
+    
+        
+      
+       
+      <mat-card-subtitle align="center"  style="font-family:標楷體;font-size:80px;">
+          
+           開發中，敬請期待
+      </mat-card-subtitle>
+      
+      <mat-card-subtitle>
+          &nbsp;
+      </mat-card-subtitle>
+      <mat-card-subtitle style="font-family:微軟正黑體;font-size:20px;">
+          &nbsp; &nbsp; &nbsp;
+           
+      </mat-card-subtitle>
+      <mat-card-subtitle>
+          &nbsp;
+      </mat-card-subtitle>
+      <mat-card-subtitle style="font-family:微軟正黑體;font-size:20px;">
+          &nbsp; &nbsp; &nbsp;
+           
+      </mat-card-subtitle>
+        
+        
+      
+        <mat-card-actions>
+                
+        </mat-card-actions>
+        
+      </mat-card>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+      

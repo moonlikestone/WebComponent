@@ -30,6 +30,7 @@ import {MatListModule} from '@angular/material';
 import {MatGridListModule} from '@angular/material';
 import {MatCardModule} from '@angular/material';
 import {MatProgressBarModule} from '@angular/material';
+import {LayoutModule} from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import {MatProgressBarModule} from '@angular/material';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    LayoutModule
 
     
   ],

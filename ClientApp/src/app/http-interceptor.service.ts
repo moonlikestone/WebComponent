@@ -11,7 +11,7 @@ export class HttpInterceptorService implements HttpInterceptor {
   constructor() { }
 
   public intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>{
-    const newRequest = req.clone({url: `https://localhost:5001/${req.url}`});
+    const newRequest = req.clone({url: `https://localhost:4200/${req.url}`});
     return next.handle(req).pipe(
       catchError((error: HttpErrorResponse)=>{
         console.log(error);
