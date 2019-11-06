@@ -1,0 +1,31 @@
+.container-1{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+.container-1 input#search{
+    width: 950px;
+    height: 50px;
+    background: #ffffffce;
+    border: 1.2mm ridge rgba(185, 177, 189, 0.6); ;
+    font-size: 10pt;
+    float: left;
+    color: #48525c;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  .container-1 .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #1c3b4d3d;
+  }
+
+

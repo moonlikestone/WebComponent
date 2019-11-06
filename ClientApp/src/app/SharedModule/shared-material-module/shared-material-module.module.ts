@@ -6,7 +6,12 @@ import { MatButtonModule,
   MatDialogModule,
   MatFormFieldModule,
   MatIconModule,
-  MatInputModule } from '@angular/material';
+  MatInputModule, 
+  MatGridListModule,
+  MatCard,
+  MatCardModule,
+  MatNavList,
+  MatListModule} from '@angular/material';
 
   import { MatMenuModule} from '@angular/material/menu';
 
@@ -19,7 +24,12 @@ import { MatButtonModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule,
+    MatCardModule,
+    MatListModule
+
+    
   ],
   exports:[
     MatButtonModule,
@@ -28,7 +38,11 @@ import { MatButtonModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule,
+    MatCardModule,
+    MatListModule
+  
   ]
 })
 export class SharedMaterialModuleModule { }
