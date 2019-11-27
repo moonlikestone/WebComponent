@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { manufacturer } from "./manufacturer";
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-manufacturer-info',
@@ -8,13 +9,18 @@ import { manufacturer } from "./manufacturer";
 })
 export class ManufacturerInfoComponent implements OnInit {
   manufacturer: manufacturer = {
-    username: "bob's componey",
-    email: '775556789@gmail.com',
-    phonenumber: 156328797
+    username: "Bowater Doors",
+    email: 'bowaterdoors@birtleygroup.co.uk',
+    phonenumber: '0845-121-5376'
   };
 
-  constructor() { }
-
+  constructor(public snackBar: MatSnackBar) { }
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+       duration: 2000,
+      });
+    } 
+  
   ngOnInit() {
   }
 

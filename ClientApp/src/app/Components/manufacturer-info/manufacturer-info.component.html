@@ -4,401 +4,99 @@
       
     </head>
     <body>
-        <mat-grid-list  style='width: 1800px;' cols="5" rowHeight="300px">
-            <mat-grid-tile rowspan='3' >
-                   <pre>
-                <h1>歡迎回來</h1>
-
-                   <h2><span>製造商: </span>{{manufacturer.username}}</h2>
-                   
-                   <h2><span>email: </span>{{manufacturer.email}}</h2>
-
-                    <h2><span>聯絡號碼:</span>{{manufacturer.phonenumber}}</h2>
-
-                <button mat-raised-button color="primary"><mat-icon>create</mat-icon> 更改資料</button>
-
-                <button mat-raised-button ><mat-icon>cloud_upload</mat-icon> 上傳元件</button>
-                <button mat-icon-button color="accent"><mat-icon>favorite</mat-icon></button> <button mat-icon-button color='warn'><mat-icon>grade</mat-icon></button>
-            </pre>
-            </mat-grid-tile>
-            <mat-grid-tile colspan='4'>
-              <h3>全部商品</h3>
-              &nbsp;&nbsp;
-                <button mat-raised-button><mat-icon>keyboard_arrow_left</mat-icon></button>
-                &nbsp;
-                <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                      
-                            <mat-card-header>
-                              
-                              <mat-card-title>元件名稱</mat-card-title>
-                              <mat-card-subtitle>元件分類</mat-card-subtitle>
-                            </mat-card-header>
-                            <img mat-card-image src="">圖片
-                  <mat-card-content>
-                              <p>
-                                簡單描述
-                              </p>
-                            </mat-card-content>
-                            <mat-card-actions>
-                                    <button mat-icon-button >
-                                            <mat-icon>cloud_download</mat-icon>
-                                          </button>
-                              <button mat-button>DOWNLOAD</button>
-                            </mat-card-actions>
-                            
-                          </mat-card>
-
-                          &nbsp;&nbsp;
-
-                          <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                      
-                                <mat-card-header>
-                                  
-                                  <mat-card-title>元件名稱</mat-card-title>
-                                  <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                </mat-card-header>
-                                <img mat-card-image src="">圖片
-                      <mat-card-content>
-                                  <p>
-                                    簡單描述
-                                  </p>
-                                </mat-card-content>
-                                <mat-card-actions>
-                                        <button mat-icon-button >
-                                                <mat-icon>cloud_download</mat-icon>
-                                              </button>
-                                  <button mat-button>DOWNLOAD</button>
-                                </mat-card-actions>
-                                
-                              </mat-card>
-
-                              &nbsp;&nbsp;
-
-                              <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                      
-                                    <mat-card-header>
-                                      
-                                      <mat-card-title>元件名稱</mat-card-title>
-                                      <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                    </mat-card-header>
-                                    <img mat-card-image src="">圖片
-                          <mat-card-content>
-                                      <p>
-                                        簡單描述
-                                      </p>
-                                    </mat-card-content>
-                                    <mat-card-actions>
-                                            <button mat-icon-button >
-                                                    <mat-icon>cloud_download</mat-icon>
-                                                  </button>
-                                      <button mat-button>DOWNLOAD</button>
-                                    </mat-card-actions>
-                                    
-                                  </mat-card>
-
-                                  &nbsp;&nbsp;
-
-                                  <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                      
-                                        <mat-card-header>
-                                          
-                                          <mat-card-title>元件名稱</mat-card-title>
-                                          <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                        </mat-card-header>
-                                        <img mat-card-image src="">圖片
-                              <mat-card-content>
-                                          <p>
-                                            簡單描述
-                                          </p>
-                                        </mat-card-content>
-                                        <mat-card-actions>
-                                                <button mat-icon-button >
-                                                        <mat-icon>cloud_download</mat-icon>
-                                                      </button>
-                                          <button mat-button>DOWNLOAD</button>
-                                        </mat-card-actions>
-                                        
-                                      </mat-card>
-
-                                      &nbsp;&nbsp;
-
-                                      <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                      
-                                            <mat-card-header>
-                                              
-                                              <mat-card-title>元件名稱</mat-card-title>
-                                              <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                            </mat-card-header>
-                                            <img mat-card-image src="">圖片
-                                  <mat-card-content>
-                                              <p>
-                                                簡單描述
-                                              </p>
-                                            </mat-card-content>
-                                            <mat-card-actions>
-                                                    <button mat-icon-button >
-                                                            <mat-icon>cloud_download</mat-icon>
-                                                          </button>
-                                              <button mat-button>DOWNLOAD</button>
-                                            </mat-card-actions>
-                                            
-                                          </mat-card>
-
-                                          &nbsp;
-
-                                      <button mat-raised-button><mat-icon>keyboard_arrow_right</mat-icon></button>
-            </mat-grid-tile>
-            <mat-grid-tile colspan='4'><h3>最多瀏覽</h3>
-              &nbsp;&nbsp;
-              <button mat-raised-button><mat-icon>keyboard_arrow_left</mat-icon></button>
-              &nbsp;
-              <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
+        <mat-grid-list  style='width: 1300px;' cols="9" rowHeight="400px">
+            <mat-grid-tile colspan='3' >
+                <mat-tab-group headerPosition="below">
+                    <mat-tab label="預覽圖"> <img src="https://assets.bimstore.co/assets/__/products/bowater/composite-door-alnwick/alnwick-iso1.jpg?version=1573720444&crop=3349%2C2696%2C826%2C0&fit=crop&w=585&h=471"  width="390"height="314"> </mat-tab>
+                    <mat-tab label="平面圖"> <img src="https://assets.bimstore.co/assets/__/products/bowater/composite-door-alnwick/alnwick-top.jpg?version=1573720444&crop=3349%2C2696%2C826%2C0&fit=crop&w=585&h=471"  width="390"height="314"> </mat-tab>
+                    <mat-tab label="立面圖"> <img src="https://assets.bimstore.co/assets/__/products/bowater/composite-door-alnwick/alnwick-front.jpg?version=1573720444&crop=3349%2C2696%2C826%2C0&fit=crop&w=585&h=471"  width="390"height="314"> </mat-tab>
+                  </mat-tab-group>
+             </mat-grid-tile>
+            <mat-grid-tile colspan='3'>
+              <mat-list>
+                <mat-list-item><h4>Composite Door – Alnwick</h4></mat-list-item>
+                <mat-list-item>製造商: Bowater Doors</mat-list-item>
+                <mat-list-item>製造日期: 2019-10-25</mat-list-item>
+                <mat-list-item>評分: 4.3/5(45)<mat-icon color='warn'>grade</mat-icon></mat-list-item>
+              </mat-list>
+              <mat-list >
+                <mat-list-item><button mat-icon-button><mat-icon>3d_rotation</mat-icon></button><button mat-button>預覽元件</button></mat-list-item>
+                <mat-list-item><button mat-icon-button><mat-icon>cloud_download</mat-icon></button><button mat-button>DOWNLOAD</button></mat-list-item>
+                    <mat-list-item><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為一顆星', '關閉')"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為二顆星', '關閉')"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為三顆星', '關閉')"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為四顆星', '關閉')"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為五顆星', '關閉')"><mat-icon>grade</mat-icon></button></mat-list-item>
+            </mat-list>
+              </mat-grid-tile>
+            <mat-grid-tile rowspan='2' colspan='3'>
+                <pre><img src="https://assets.bimstore.co/assets/__/manufacturers/bowater-doors/new-bowater-doors-logo.jpg?version=1567672237&fit=fill&w=300&h=300"  width="300"height="300">
+                    <h2><span>製造商: </span>{{manufacturer.username}}</h2>
                     
-                          <mat-card-header>
-                            
-                            <mat-card-title>元件名稱</mat-card-title>
-                            <mat-card-subtitle>元件分類</mat-card-subtitle>
-                          </mat-card-header>
-                          <img mat-card-image src="">圖片
-                <mat-card-content>
-                            <p>
-                              簡單描述
-                            </p>
-                          </mat-card-content>
-                          <mat-card-actions>
-                                  <button mat-icon-button >
-                                          <mat-icon>cloud_download</mat-icon>
-                                        </button>
-                            <button mat-button>DOWNLOAD</button>
-                          </mat-card-actions>
-                          
-                        </mat-card>
-
-                        &nbsp;&nbsp;
-
-                        <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                              <mat-card-header>
-                                
-                                <mat-card-title>元件名稱</mat-card-title>
-                                <mat-card-subtitle>元件分類</mat-card-subtitle>
-                              </mat-card-header>
-                              <img mat-card-image src="">圖片
-                    <mat-card-content>
-                                <p>
-                                  簡單描述
-                                </p>
-                              </mat-card-content>
-                              <mat-card-actions>
-                                      <button mat-icon-button >
-                                              <mat-icon>cloud_download</mat-icon>
-                                            </button>
-                                <button mat-button>DOWNLOAD</button>
-                              </mat-card-actions>
-                              
-                            </mat-card>
-
-                            &nbsp;&nbsp;
-
-                            <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                  <mat-card-header>
-                                    
-                                    <mat-card-title>元件名稱</mat-card-title>
-                                    <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                  </mat-card-header>
-                                  <img mat-card-image src="">圖片
-                        <mat-card-content>
-                                    <p>
-                                      簡單描述
-                                    </p>
-                                  </mat-card-content>
-                                  <mat-card-actions>
-                                          <button mat-icon-button >
-                                                  <mat-icon>cloud_download</mat-icon>
-                                                </button>
-                                    <button mat-button>DOWNLOAD</button>
-                                  </mat-card-actions>
-                                  
-                                </mat-card>
-
-                                &nbsp;&nbsp;
-
-                                <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                      <mat-card-header>
-                                        
-                                        <mat-card-title>元件名稱</mat-card-title>
-                                        <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                      </mat-card-header>
-                                      <img mat-card-image src="">圖片
-                            <mat-card-content>
-                                        <p>
-                                          簡單描述
-                                        </p>
-                                      </mat-card-content>
-                                      <mat-card-actions>
-                                              <button mat-icon-button >
-                                                      <mat-icon>cloud_download</mat-icon>
-                                                    </button>
-                                        <button mat-button>DOWNLOAD</button>
-                                      </mat-card-actions>
-                                      
-                                    </mat-card>
-
-                                    &nbsp;&nbsp;
-
-                                    <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                          <mat-card-header>
-                                            
-                                            <mat-card-title>元件名稱</mat-card-title>
-                                            <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                          </mat-card-header>
-                                          <img mat-card-image src="">圖片
-                                <mat-card-content>
-                                            <p>
-                                              簡單描述
-                                            </p>
-                                          </mat-card-content>
-                                          <mat-card-actions>
-                                                  <button mat-icon-button >
-                                                          <mat-icon>cloud_download</mat-icon>
-                                                        </button>
-                                            <button mat-button>DOWNLOAD</button>
-                                          </mat-card-actions>
-                                          
-                                        </mat-card>
-
-                                        &nbsp;
-
-                                    <button mat-raised-button><mat-icon>keyboard_arrow_right</mat-icon></button></mat-grid-tile>
+                    <h2><span>email: </span>{{manufacturer.email}}</h2>
+ 
+                   <h2><span>聯絡號碼:</span>{{manufacturer.phonenumber}}</h2>
+                </pre>
+             </mat-grid-tile>
             
-            <mat-grid-tile colspan='4'><h3>可加強元件</h3>
-              &nbsp;&nbsp;
-              <button mat-raised-button><mat-icon>keyboard_arrow_left</mat-icon></button>
-              &nbsp;
-              <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                          <mat-card-header>
-                            
-                            <mat-card-title>元件名稱</mat-card-title>
-                            <mat-card-subtitle>元件分類</mat-card-subtitle>
-                          </mat-card-header>
-                          <img mat-card-image src="">圖片
-                <mat-card-content>
-                            <p>
-                              簡單描述
-                            </p>
-                          </mat-card-content>
-                          <mat-card-actions>
-                                  <button mat-icon-button >
-                                          <mat-icon>cloud_download</mat-icon>
-                                        </button>
-                            <button mat-button>DOWNLOAD</button>
-                          </mat-card-actions>
-                          
-                        </mat-card>
-
-                        &nbsp;&nbsp;
-
-                        <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                              <mat-card-header>
-                                
-                                <mat-card-title>元件名稱</mat-card-title>
-                                <mat-card-subtitle>元件分類</mat-card-subtitle>
-                              </mat-card-header>
-                              <img mat-card-image src="">圖片
-                    <mat-card-content>
-                                <p>
-                                  簡單描述
-                                </p>
-                              </mat-card-content>
-                              <mat-card-actions>
-                                      <button mat-icon-button >
-                                              <mat-icon>cloud_download</mat-icon>
-                                            </button>
-                                <button mat-button>DOWNLOAD</button>
-                              </mat-card-actions>
-                              
-                            </mat-card>
-
-                            &nbsp;&nbsp;
-
-                            <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                  <mat-card-header>
-                                    
-                                    <mat-card-title>元件名稱</mat-card-title>
-                                    <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                  </mat-card-header>
-                                  <img mat-card-image src="">圖片
-                        <mat-card-content>
-                                    <p>
-                                      簡單描述
-                                    </p>
-                                  </mat-card-content>
-                                  <mat-card-actions>
-                                          <button mat-icon-button >
-                                                  <mat-icon>cloud_download</mat-icon>
-                                                </button>
-                                    <button mat-button>DOWNLOAD</button>
-                                  </mat-card-actions>
-                                  
-                                </mat-card>
-
-                                &nbsp;&nbsp;
-
-                                <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                      <mat-card-header>
-                                        
-                                        <mat-card-title>元件名稱</mat-card-title>
-                                        <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                      </mat-card-header>
-                                      <img mat-card-image src="">圖片
-                            <mat-card-content>
-                                        <p>
-                                          簡單描述
-                                        </p>
-                                      </mat-card-content>
-                                      <mat-card-actions>
-                                              <button mat-icon-button >
-                                                      <mat-icon>cloud_download</mat-icon>
-                                                    </button>
-                                        <button mat-button>DOWNLOAD</button>
-                                      </mat-card-actions>
-                                      
-                                    </mat-card>
-
-                                    &nbsp;&nbsp;
-
-                                    <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                          <mat-card-header>
-                                            
-                                            <mat-card-title>元件名稱</mat-card-title>
-                                            <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                          </mat-card-header>
-                                          <img mat-card-image src="">圖片
-                                <mat-card-content>
-                                            <p>
-                                              簡單描述
-                                            </p>
-                                          </mat-card-content>
-                                          <mat-card-actions>
-                                                  <button mat-icon-button >
-                                                          <mat-icon>cloud_download</mat-icon>
-                                                        </button>
-                                            <button mat-button>DOWNLOAD</button>
-                                          </mat-card-actions>
-                                          
-                                        </mat-card>
-
-                                        &nbsp;
-
-                                    <button mat-raised-button><mat-icon>keyboard_arrow_right</mat-icon></button></mat-grid-tile>
+            <mat-grid-tile colspan='6'>
+                <mat-tab-group>
+                    <mat-tab label="描述">
+                      <mat-list>
+                        <mat-list-item><h4>Single Rebated (44mm) External Composite Door</h4></mat-list-item>
+                        <mat-list-item><h4>GRP skin to minimise scratches. Supplied fully framed for easy installation. Inner core made of polyurethane foam for superior thermal insulation.</h4></mat-list-item>
+                      </mat-list>
+                    </mat-tab>
+                    <mat-tab label="詳細屬性">
+                        <mat-list>
+                            <mat-list-item><h4>標準高度:  2074.5mm</h4></mat-list-item>
+                            <mat-list-item><h4>標準寬度:  855.0mm</h4></mat-list-item>
+                            <mat-list-item><h4>門檻寬度:  855.0mm</h4></mat-list-item>
+                            <mat-list-item><h4>尺寸:  使用者可自定義</h4></mat-list-item>
+                            <mat-list-item><h4>顏色:  使用者可自定義</h4></mat-list-item>
+                            <mat-list-item><h4>材質:  玻璃-不鏽鋼</h4></mat-list-item>
+                            <mat-list-item><h4>防火時效:  FD30S</h4></mat-list-item>
+                          </mat-list>
+                    </mat-tab>
+                    <mat-tab label="分類">
+                        <mat-list>
+                            <mat-list-item><h4>網站分類:  門</h4></mat-list-item>
+                            <mat-list-item><h4>Ifc分類: IfcDoor</h4></mat-list-item>
+                            <mat-list-item><h4>BIMobject分類:  door-doorsets</h4></mat-list-item>
+                            <mat-list-item><h4>NBS Description:  Composite doorsets</h4></mat-list-item>
+                            <mat-list-item><h4>NBS Reference:  45-25-28/342</h4></mat-list-item>
+                            <mat-list-item><h4>Classification Name:  Uniclass 2015</h4></mat-list-item>
+                            <mat-list-item><h4>Classification Value:  Pr_30_59_24_16</h4></mat-list-item>
+                          </mat-list>
+                    </mat-tab>
+                    <mat-tab label="相關鏈接">
+                        <mat-list>
+                            <mat-list-item><h4>官方網站:</h4><a href="http://www.bowaterdoors.co.uk" target="_blank" title="www.bowaterdoors.co.uk">www.bowaterdoors.co.uk</a></mat-list-item>
+                            <mat-list-item><h4>產品接洽</h4><a href="mailto:bowaterdoors@birtleygroup.co.uk" target="_blank" title="bowaterdoors@birtleygroup.co.uk">bowaterdoors@birtleygroup.co.uk</a></mat-list-item>
+                            <mat-list-item><h4>保固詢問</h4><a href="mailto:door.warranty@birtleygroup.co.uk" target="_blank" title="door.warranty@birtleygroup.co.uk">door.warranty@birtleygroup.co.uk</a></mat-list-item>
+                          </mat-list>
+                    </mat-tab>
+                    <mat-tab label="#標籤">
+                        <mat-chip-list>
+                          <mat-chip>#door</mat-chip>
+                          <mat-chip>#bowaterdoors</mat-chip>
+                          <mat-chip>#compositedoor</mat-chip>
+                          <mat-chip>#alnwick</mat-chip>
+                          <mat-chip>#45-25-38/342</mat-chip>
+                          <mat-chip>#pr_30_59_24_16</mat-chip>
+                          <mat-chip>#single</mat-chip>
+                          <mat-chip>#fd30s</mat-chip>
+                          <mat-chip>#userdifined</mat-chip>
+                          <mat-chip>#自定義</mat-chip>
+                          <mat-chip>#門</mat-chip>
+                          <mat-chip>#glass</mat-chip>
+                          <mat-chip>#玻璃</mat-chip>
+                          <mat-chip>#stainleddsteel</mat-chip>
+                          <mat-chip>#不鏽鋼</mat-chip>
+                          <mat-chip>#multipointlock</mat-chip>
+                          <mat-chip>#sashlock</mat-chip>
+                          <mat-chip>#deadLock</mat-chip>
+                          <mat-chip>#nightlatch</mat-chip>
+                        </mat-chip-list>
+                    </mat-tab>
+                  </mat-tab-group>
+            </mat-grid-tile>
             
           </mat-grid-list>
        

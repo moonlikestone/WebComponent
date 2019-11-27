@@ -11,7 +11,10 @@ import { MatButtonModule,
   MatCard,
   MatCardModule,
   MatNavList,
-  MatListModule} from '@angular/material';
+  MatListModule,
+  MatSnackBarModule,
+  MatTabsModule,
+  MatChipsModule} from '@angular/material';
 
   import { MatMenuModule} from '@angular/material/menu';
 
@@ -27,7 +30,10 @@ import { MatButtonModule,
     MatMenuModule,
     MatGridListModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatSnackBarModule,
+    MatTabsModule,
+    MatChipsModule
 
     
   ],
@@ -41,7 +47,10 @@ import { MatButtonModule,
     MatMenuModule,
     MatGridListModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatSnackBarModule,
+    MatTabsModule,
+    MatChipsModule
   
   ]
 })

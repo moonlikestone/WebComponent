@@ -1,9 +1,9 @@
 <mat-toolbar color="primary" class="app-header">
-  <button mat-button class="toolbar-btn"><h4>BIM Component</h4></button>
+  <button mat-button class="toolbar-btn" routerLink="/" routerLinkActive="active"><h4>BIM Component</h4></button>
   <button mat-button class="toolbar-btn" routerLink="/search" routerLinkActive="active"><h4>瀏覽</h4></button>
-  <button mat-button class="toolbar-btn"><h4>製造商</h4></button>
-  <button mat-button class="toolbar-btn"><h4>聯繫我們</h4></button>
-  <button mat-button class="toolbar-btn"><h4>贊助我們</h4></button>
+  <button mat-button class="toolbar-btn" routerLink="/manufacturer" routerLinkActive="active"><h4>製造商</h4></button>
+  <button mat-button class="toolbar-btn" routerLink="/user" routerLinkActive="active"><h4>聯繫我們</h4></button>
+  <button mat-button class="toolbar-btn" routerLink="/search" routerLinkActive="active"><h4>贊助我們</h4></button>
   <span class="toolbar-seprator"></span>
 
   <div *ngIf="login; else loginButton">
