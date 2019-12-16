@@ -21,13 +21,21 @@
               </mat-list>
               <mat-list >
                 <mat-list-item><button mat-icon-button><mat-icon>3d_rotation</mat-icon></button><button mat-button>預覽元件</button></mat-list-item>
-                <mat-list-item><button mat-icon-button><mat-icon>cloud_download</mat-icon></button><button mat-button>DOWNLOAD</button></mat-list-item>
-                    <mat-list-item><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為一顆星', '關閉')"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為二顆星', '關閉')"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為三顆星', '關閉')"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為四顆星', '關閉')"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為五顆星', '關閉')"><mat-icon>grade</mat-icon></button></mat-list-item>
-            </mat-list>
+                <mat-list-item><button mat-icon-button><mat-icon>cloud_download</mat-icon></button><button mat-button [matMenuTriggerFor]="messageMenu" #menuTrigger="matMenuTrigger">DOWNLOAD</button></mat-list-item>
+                <mat-menu #messageMenu="matMenu">
+                  <button mat-menu-item><img src="https://i.pinimg.com/474x/8d/46/b3/8d46b3563f7c10129b526b9175281176.jpg"  width="18"height="18">Revit</button>
+                  <button mat-menu-item><img src="https://www.buildingsmart.org/wp-content/uploads/2019/07/IFC2x3-Logo-2.png"  width="18"height="18">IFC</button>
+                  <button mat-menu-item><img src="https://www.logolynx.com/images/logolynx/7b/7b65ad67e07ce5990b53a411725dd55d.jpeg"  width="18"height="18">ArchiCAD</button>
+                  <button mat-menu-item><img src="https://cdn.worldvectorlogo.com/logos/3ds-max-full.svg"  width="18"height="18">3DMax</button>
+                  <button mat-menu-item><img src="http://www.sketchup-tw.com.tw/wp-content/uploads/2019/05/2019-05-06_10-37-58.png"  width="18"height="18">Sketchup</button>
+                </mat-menu>
+                    <mat-list-item><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為一顆星', '關閉')" matTooltip="評價一顆星"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為二顆星', '關閉')" matTooltip="評價二顆星"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為三顆星', '關閉')" matTooltip="評價三顆星"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為四顆星', '關閉')" matTooltip="評價四顆星"><mat-icon>grade</mat-icon></button><button mat-icon-button color='warn' (click)="openSnackBar('您評價此元件為五顆星', '關閉')" matTooltip="評價五顆星"><mat-icon>grade</mat-icon></button></mat-list-item>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<button mat-icon-button color="accent" matTooltip="關注這個元件"><mat-icon>favorite</mat-icon></button>
+                  </mat-list>
               </mat-grid-tile>
-            <mat-grid-tile rowspan='2' colspan='3'>
+            <mat-grid-tile rowspan='2' colspan='3' style="background:rgb(163, 193, 212);">
                 <pre><img src="https://assets.bimstore.co/assets/__/manufacturers/bowater-doors/new-bowater-doors-logo.jpg?version=1567672237&fit=fill&w=300&h=300"  width="300"height="300">
-                    <h2><span>製造商: </span>{{manufacturer.username}}</h2>
+                    <h2><span>製造商: </span>{{manufacturer.username} <button mat-icon-button matTooltip="關注這個製造商" color='warn'><mat-icon>grade</mat-icon></button></h2>
                     
                     <h2><span>email: </span>{{manufacturer.email}}</h2>
  
@@ -36,14 +44,14 @@
              </mat-grid-tile>
             
             <mat-grid-tile colspan='6'>
-                <mat-tab-group>
+                <mat-tab-group backgroundColor="primary" color="accent">
                     <mat-tab label="描述">
                       <mat-list>
                         <mat-list-item><h4>Single Rebated (44mm) External Composite Door</h4></mat-list-item>
                         <mat-list-item><h4>GRP skin to minimise scratches. Supplied fully framed for easy installation. Inner core made of polyurethane foam for superior thermal insulation.</h4></mat-list-item>
                       </mat-list>
                     </mat-tab>
-                    <mat-tab label="詳細屬性">
+                    <mat-tab label="詳細屬性" >
                         <mat-list>
                             <mat-list-item><h4>標準高度:  2074.5mm</h4></mat-list-item>
                             <mat-list-item><h4>標準寬度:  855.0mm</h4></mat-list-item>

@@ -14,7 +14,8 @@ import { MatButtonModule,
   MatListModule,
   MatSnackBarModule,
   MatTabsModule,
-  MatChipsModule} from '@angular/material';
+  MatChipsModule,
+  MatTooltipModule} from '@angular/material';
 
   import { MatMenuModule} from '@angular/material/menu';
 
@@ -33,7 +34,8 @@ import { MatButtonModule,
     MatListModule,
     MatSnackBarModule,
     MatTabsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTooltipModule
 
     
   ],
@@ -50,7 +52,8 @@ import { MatButtonModule,
     MatListModule,
     MatSnackBarModule,
     MatTabsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTooltipModule
   
   ]
 })
