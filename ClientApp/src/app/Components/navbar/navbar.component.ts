@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
     this.userName = "TestPeople";
     this.logAccount = "TestAccount";
     //登入介面會依照userType的不同而有不同
-    //user = 一般使用者, manager = 管理人員, manufacturer = 製造商
+    //user = 一般使用者, manager = 管理人員以改成製造商, manufacturer = 製造商不要用
     this.userType = "user";
   }
   toMemberInfo(){
