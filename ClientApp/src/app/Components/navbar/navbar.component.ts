@@ -18,12 +18,12 @@ export class NavbarComponent implements OnInit {
   userType: string;
   ngOnInit() {
     //這邊僅供測試不同用戶登入介面
-    //this.login = true;
-    //this.userName = "TestPeople";
-    //this.logAccount = "TestAccount";
+    this.login = true;
+    this.userName = "TestPeople";
+    this.logAccount = "TestAccount";
     //登入介面會依照userType的不同而有不同
     //user = 一般使用者, manager = 管理人員, manufacturer = 製造商
-    //this.userType = "user";
+    this.userType = "user";
   }
   toMemberInfo(){
 
