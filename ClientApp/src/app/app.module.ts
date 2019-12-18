@@ -20,7 +20,18 @@ import { UserInfoComponent } from './Components/user-info/user-info.component';
 import { ManagerInfoComponent } from './Components/manager-info/manager-info.component';
 import { ManufacturerInfoComponent } from './Components/manufacturer-info/manufacturer-info.component';
 import { from } from 'rxjs';
-
+import {MatTreeModule} from '@angular/material/tree';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
+import {MatListModule} from '@angular/material';
+import {MatGridListModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
+import {MatProgressBarModule} from '@angular/material';
+import {LayoutModule} from '@angular/cdk/layout';
+import { saveAs } from 'file-saver';
 
 @NgModule({
   declarations: [
@@ -42,7 +53,22 @@ import { from } from 'rxjs';
     SharedMaterialModuleModule,
     FormsModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTreeModule,
+    MatExpansionModule,
+    DragDropModule,
+    ScrollingModule,
+    CdkTableModule,
+    CdkTreeModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatProgressBarModule,
+    LayoutModule,
+    
+    
+
+    
   ],
   providers: [
     {provide: MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'auto' }},

@@ -1,114 +1,363 @@
-<html>
-    
-    <head>
+<pre></pre>
+<a mat-raised-button color="primary" style="width:180px;">Classification</a>
+&nbsp;
+<button mat-icon-button >
+    <mat-icon>search</mat-icon>
+  </button>
+<mat-form-field value="1"  style="width:500px;" >
+  <input matInput placeholder="輸入關鍵字搜尋" >
+</mat-form-field>
+       
+<mat-grid-list style="width:1400px;" cols="7" rowHeight="400px">
+    <mat-grid-tile colspan="1">
+
+      <mat-nav-list style="width:200px;height:400px;">
+
+          <mat-accordion>
+      <mat-expansion-panel hideToggle="true">
+          <mat-expansion-panel-header>
+             品牌
+          </mat-expansion-panel-header>
+          
+          <a mat-list-item>
+              廠商A
+            </a>
+            <a mat-list-item>
+                廠商B
+            </a>
+            <a mat-list-item>
+                廠商C
+            </a>
+            <a mat-list-item>
+                廠商D
+            </a>
+            <a mat-list-item>
+                廠商E
+            </a>
+            <a mat-list-item>
+                廠商F
+            </a>
+            <a mat-list-item>
+                廠商G
+            </a>
+            <a mat-list-item>
+                廠商H
+            </a>
+            <a mat-list-item>
+                廠商I
+            </a>
+            <a mat-list-item>
+                廠商J
+            </a>
+          
+        </mat-expansion-panel >
       
-    </head>
-    <body>
-        <mat-grid-list  style='width: 1800px;' cols="5" rowHeight="300px">
-            <mat-grid-tile rowspan='3' >
-                   <pre>
-                <h1>歡迎回來</h1>
+        <mat-expansion-panel hideToggle="true">
+            
+            <mat-expansion-panel-header>
+               對象類型
+            </mat-expansion-panel-header>
+            
+            <a mat-list-item>
+                  門
+              </a>
+              <a mat-list-item>
+                 窗戶
+              </a>
+              <a mat-list-item>
+                管線
+              </a>
+              <a mat-list-item>
+                  電子
+              </a>
+              <a mat-list-item>
+                 電器
+              </a>
+              <a mat-list-item>
+                  機械
+              </a>
+              <a mat-list-item>
+                  景觀
+              </a>
+              <a mat-list-item>
+                  運動與娛樂
+              </a>
+              <a mat-list-item>
+                  消防
+              </a>
+              <a mat-list-item>
+                  照明
+              </a>
+              <a mat-list-item>
+                  家具
+              </a>
+              <a mat-list-item>
+                  階梯
+              </a>
+              <a mat-list-item>
+                  建築材料
+              </a>
+              <a mat-list-item>
+                  地板
+              </a>
+              <a mat-list-item>
+                  廚房
+              </a>
+              <a mat-list-item>
+                  衛生
+              </a>
+            
+          </mat-expansion-panel >
+          <mat-expansion-panel hideToggle="true">
+              <mat-expansion-panel-header>
+                 文件分類
+              </mat-expansion-panel-header>
+              
+              <a mat-list-item>
+                    REVIT
+                </a>
+                <a mat-list-item>
+                    3DS
+                </a>
+                <a mat-list-item>
+                    ArchiCAD
+                </a>
+                <a mat-list-item>
+                    SKetchup
+                </a>
+                <a mat-list-item>
+                    IFC
+                </a>
+              
+            </mat-expansion-panel >
 
-                   <h2><span>使用者: </span>{{user.username}}</h2>
-                   
-                   <h2><span>email: </span>{{user.email}}</h2>
+          </mat-accordion>
+      </mat-nav-list>
+    </mat-grid-tile>
+      <mat-grid-tile colspan="6"  style="width:200px;height:400px;"> 
 
-                    <h2><span>手機號碼:</span>{{user.phonenumber}}</h2>
-
-                <button mat-raised-button color="primary"><mat-icon>create</mat-icon> 更改資料</button>
-
-                <button mat-raised-button ><mat-icon>cloud_upload</mat-icon> 上傳元件</button>
-                <button mat-icon-button color="accent"><mat-icon>favorite</mat-icon></button> <button mat-icon-button color='warn'><mat-icon>grade</mat-icon></button>
-            </pre>
-            </mat-grid-tile>
-            <mat-grid-tile colspan='4'>
-              <h3>瀏覽紀錄</h3>
-              &nbsp;&nbsp;
-                <button mat-raised-button><mat-icon>keyboard_arrow_left</mat-icon></button>
-                &nbsp;
-                <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
+      
+        <mat-card class="post-tile"  [tabindex]="index"  >
                       
-                            <mat-card-header>
+              <mat-card-header>
+                
+                <mat-card-title>
+                    Fire-proof door</mat-card-title>
+                <mat-card-subtitle>Door</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="http://i.imgur.com/YIA6iDu.jpg" width="350"height="200">
+    <mat-card-content>
+                <p>
+                  This is a door.
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                      <button mat-icon-button >
+                              <mat-icon>cloud_download</mat-icon>
+                            </button>
+                            <a mat-button href="https://wesenditstor-01.wesendit.com/xgYu15Y5FtyIIC/wesendit_xgYu15Y5FtyIIC.zip/undefined">DOWNLOAD</a>
+              </mat-card-actions>
+              
+            </mat-card>
+       
+                <mat-card class="post-tile"  style="width:180px;" [tabindex]="index" >
                               
-                              <mat-card-title>元件名稱</mat-card-title>
-                              <mat-card-subtitle>元件分類</mat-card-subtitle>
-                            </mat-card-header>
-                            <img mat-card-image src="">圖片
-                  <mat-card-content>
-                              <p>
-                                簡單描述
-                              </p>
-                            </mat-card-content>
-                            <mat-card-actions>
-                                    <button mat-icon-button >
-                                            <mat-icon>cloud_download</mat-icon>
-                                          </button>
-                              <button mat-button>DOWNLOAD</button>
-                            </mat-card-actions>
-                            
-                          </mat-card>
-
-                          &nbsp;&nbsp;
-
-                          <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
+                      <mat-card-header>
+                        
+                        <mat-card-title>
+                            Glass door</mat-card-title>
+                        <mat-card-subtitle>Door</mat-card-subtitle>
+                      </mat-card-header>
+                      <img mat-card-image src="http://static.goujianwu.com/metadata/1081723627920960/thumbnails/256_0.png" width="350"height="200">
+            <mat-card-content>
+                        <p>
+                          This is a door.
+                        </p>
+                      </mat-card-content>
+                      <mat-card-actions>
+                              <button mat-icon-button >
+                                      <mat-icon>cloud_download</mat-icon>
+                                    </button>
+                                    <a mat-button href="https://wesenditstor-01.wesendit.com/xgYu15Y5FtyIIC/wesendit_xgYu15Y5FtyIIC.zip/undefined">DOWNLOAD</a>
+                      </mat-card-actions>
                       
+                    </mat-card>
+                  
+
+                   <mat-card class="post-tile"  style="width:180px;" [tabindex]="index" >
+                              
+                      <mat-card-header>
+                        
+                        <mat-card-title>Elevator</mat-card-title>
+                        <mat-card-subtitle>Mechanical</mat-card-subtitle>
+                      </mat-card-header>
+                      <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0YFnNjMr0UZ_FLsVlvY-p_-qT_Kl0iiiGtCkpA5Ezlt9UJfH" width="350"height="200">
+                      <mat-card-content>
+                        <p>
+                          This is a elevator.
+                        </p>
+                      </mat-card-content>
+                      <mat-card-actions>
+                              <button mat-icon-button >
+                                      <mat-icon>cloud_download</mat-icon>
+                                    </button>
+                                    <a mat-button href="https://wesenditstor-01.wesendit.com/NXXaanvRsInUpD/wesendit_NXXaanvRsInUpD.zip/undefined">DOWNLOAD</a>
+                      </mat-card-actions>
+                      
+                    </mat-card>     
+
+                    
+
+                <mat-card class="post-tile"  style="width:180px;" [tabindex]="index" >
+                              
+                      <mat-card-header>
+                        
+                        <mat-card-title>Fire hydrant</mat-card-title>
+                        <mat-card-subtitle>
+                            Fire facilities</mat-card-subtitle>
+                      </mat-card-header>
+                      <img mat-card-image src="http://bim.tabc.org.tw/storage/assets/images/59df4770edfca521af2a5726486f6f3b.png" width="350"height="200">
+                      <mat-card-content>
+                        <p>
+                          This is a fire hydrant.
+                        </p>
+                      </mat-card-content>
+                      <mat-card-actions>
+                              <button mat-icon-button >
+                                      <mat-icon>cloud_download</mat-icon>
+                                    </button>
+                                    <a mat-button href="https://wesenditstor-01.wesendit.com/kB4WGp1ZVF6INA/wesendit_kB4WGp1ZVF6INA.zip/undefined">DOWNLOAD</a>
+                      </mat-card-actions>
+                      
+                    </mat-card>
+   
+                    <mat-card class="post-tile"  style="width:180px;" [tabindex]="index" >
+                              
+                        <mat-card-header>
+                          
+                          <mat-card-title>Window</mat-card-title>
+                          <mat-card-subtitle>
+                              Window</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="http://help.autodesk.com/cloudhelp/2016/CHT/Revit-Customize/images/GUID-48F99456-EA9B-412E-8E1D-714DFE781764.png" width="350"height="200">
+                        <mat-card-content>
+                          <p>
+                            This is a window.
+                          </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                                <button mat-icon-button >
+                                        <mat-icon>cloud_download</mat-icon>
+                                      </button>
+                                      <a mat-button href="https://wesenditstor-03.wesendit.com/sqTexgiHw0KWhs/wesendit_sqTexgiHw0KWhs.zip/undefined">DOWNLOAD</a>
+                        </mat-card-actions>
+                        
+                      </mat-card>
+
+                  </mat-grid-tile>
+                  </mat-grid-list>
+
+
+
+
+
+
+
+
+                  
+                  <mat-grid-list style="width:1400px;" cols="7" rowHeight="1600px">
+                      <mat-grid-tile colspan="1">
+                  
+                        <mat-nav-list style="width:200px;height:1600px;">
+                  
+                           
+                        </mat-nav-list>
+                      </mat-grid-tile>
+                        <mat-grid-tile colspan="6"> 
+
+                          <mat-card class="post-tile"  [tabindex]="index" >
+                                        
                                 <mat-card-header>
                                   
-                                  <mat-card-title>元件名稱</mat-card-title>
-                                  <mat-card-subtitle>元件分類</mat-card-subtitle>
+                                  <mat-card-title>
+                                      Wooden door</mat-card-title>
+                                  <mat-card-subtitle>Door</mat-card-subtitle>
                                 </mat-card-header>
-                                <img mat-card-image src="">圖片
+                                <img mat-card-image src="data:image/jpeg;base64,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" width="350"height="200" >
                       <mat-card-content>
                                   <p>
-                                    簡單描述
+                                    This is a door.
                                   </p>
                                 </mat-card-content>
                                 <mat-card-actions>
                                         <button mat-icon-button >
                                                 <mat-icon>cloud_download</mat-icon>
                                               </button>
-                                  <button mat-button>DOWNLOAD</button>
+                                              <a mat-button href="https://wesenditstor-01.wesendit.com/xgYu15Y5FtyIIC/wesendit_xgYu15Y5FtyIIC.zip/undefined">DOWNLOAD</a>
                                 </mat-card-actions>
                                 
                               </mat-card>
-
-                              &nbsp;&nbsp;
-
-                              <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                      
-                                    <mat-card-header>
-                                      
-                                      <mat-card-title>元件名稱</mat-card-title>
-                                      <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                    </mat-card-header>
-                                    <img mat-card-image src="">圖片
-                          <mat-card-content>
-                                      <p>
-                                        簡單描述
-                                      </p>
-                                    </mat-card-content>
-                                    <mat-card-actions>
-                                            <button mat-icon-button >
-                                                    <mat-icon>cloud_download</mat-icon>
-                                                  </button>
-                                      <button mat-button>DOWNLOAD</button>
-                                    </mat-card-actions>
-                                    
-                                  </mat-card>
-
-                                  &nbsp;&nbsp;
-
-                                  <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                      
+                         
+                                  <mat-card class="post-tile"  style="width:180px;" [tabindex]="index" >
+                                                
                                         <mat-card-header>
                                           
-                                          <mat-card-title>元件名稱</mat-card-title>
-                                          <mat-card-subtitle>元件分類</mat-card-subtitle>
+                                          <mat-card-title>
+                                              Glass door</mat-card-title>
+                                          <mat-card-subtitle>Door</mat-card-subtitle>
                                         </mat-card-header>
-                                        <img mat-card-image src="">圖片
+                                        <img mat-card-image src="http://static.goujianwu.com/metadata/1229026101984832/thumbnails/512_0.png" width="350"height="200">
                               <mat-card-content>
                                           <p>
-                                            簡單描述
+                                            This is a door.
+                                          </p>
+                                        </mat-card-content>
+                                        <mat-card-actions>
+                                                <button mat-icon-button >
+                                                        <mat-icon>cloud_download</mat-icon>
+                                                      </button>
+                                                      <a mat-button href="https://wesenditstor-01.wesendit.com/xgYu15Y5FtyIIC/wesendit_xgYu15Y5FtyIIC.zip/undefined">DOWNLOAD</a>
+                                        </mat-card-actions>
+                                        
+                                      </mat-card>
+                                    
+                  
+                                     <mat-card class="post-tile"  style="width:180px;" [tabindex]="index" >
+                                                
+                                        <mat-card-header>
+                                          
+                                          <mat-card-title>Aluminum window</mat-card-title>
+                                          <mat-card-subtitle>Window</mat-card-subtitle>
+                                        </mat-card-header>
+                                        <img mat-card-image src="http://bim.tabc.org.tw/storage/assets/images/5a7f2e36358e2bb98d39a1bc7793d65a.jpg" width="350"height="180">
+                                        <mat-card-content>
+                                          <p>
+                                            This is a Window.
+                                          </p>
+                                        </mat-card-content>
+                                        <mat-card-actions>
+                                                <button mat-icon-button >
+                                                        <mat-icon>cloud_download</mat-icon>
+                                                      </button>
+                                                      <a mat-button href="https://wesenditstor-03.wesendit.com/sqTexgiHw0KWhs/wesendit_sqTexgiHw0KWhs.zip/undefined">DOWNLOAD</a>
+                                        </mat-card-actions>
+                                        
+                                      </mat-card>     
+                  
+                                      
+                  
+                                  <mat-card class="post-tile"  style="width:180px;" [tabindex]="index" >
+                                                
+                                        <mat-card-header>
+                                          
+                                          <mat-card-title>Wooden chair</mat-card-title>
+                                          <mat-card-subtitle>
+                                            Furniture</mat-card-subtitle>
+                                        </mat-card-header>
+                                        <img mat-card-image src="data:image/png;base64,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" width="350"height="200">
+                                        <mat-card-content>
+                                          <p>
+                                            This is a wooden chair.
                                           </p>
                                         </mat-card-content>
                                         <mat-card-actions>
@@ -119,146 +368,19 @@
                                         </mat-card-actions>
                                         
                                       </mat-card>
-
-                                      &nbsp;&nbsp;
-
-                                      <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                      
-                                            <mat-card-header>
-                                              
-                                              <mat-card-title>元件名稱</mat-card-title>
-                                              <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                            </mat-card-header>
-                                            <img mat-card-image src="">圖片
-                                  <mat-card-content>
-                                              <p>
-                                                簡單描述
-                                              </p>
-                                            </mat-card-content>
-                                            <mat-card-actions>
-                                                    <button mat-icon-button >
-                                                            <mat-icon>cloud_download</mat-icon>
-                                                          </button>
-                                              <button mat-button>DOWNLOAD</button>
-                                            </mat-card-actions>
-                                            
-                                          </mat-card>
-
-                                          &nbsp;
-
-                                      <button mat-raised-button><mat-icon>keyboard_arrow_right</mat-icon></button>
-            </mat-grid-tile>
-            <mat-grid-tile colspan='4'><h3>下載紀錄</h3>
-              &nbsp;&nbsp;
-              <button mat-raised-button><mat-icon>keyboard_arrow_left</mat-icon></button>
-              &nbsp;
-              <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                          <mat-card-header>
-                            
-                            <mat-card-title>元件名稱</mat-card-title>
-                            <mat-card-subtitle>元件分類</mat-card-subtitle>
-                          </mat-card-header>
-                          <img mat-card-image src="">圖片
-                <mat-card-content>
-                            <p>
-                              簡單描述
-                            </p>
-                          </mat-card-content>
-                          <mat-card-actions>
-                                  <button mat-icon-button >
-                                          <mat-icon>cloud_download</mat-icon>
-                                        </button>
-                            <button mat-button>DOWNLOAD</button>
-                          </mat-card-actions>
-                          
-                        </mat-card>
-
-                        &nbsp;&nbsp;
-
-                        <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                              <mat-card-header>
-                                
-                                <mat-card-title>元件名稱</mat-card-title>
-                                <mat-card-subtitle>元件分類</mat-card-subtitle>
-                              </mat-card-header>
-                              <img mat-card-image src="">圖片
-                    <mat-card-content>
-                                <p>
-                                  簡單描述
-                                </p>
-                              </mat-card-content>
-                              <mat-card-actions>
-                                      <button mat-icon-button >
-                                              <mat-icon>cloud_download</mat-icon>
-                                            </button>
-                                <button mat-button>DOWNLOAD</button>
-                              </mat-card-actions>
+                     
+                                      <mat-card class="post-tile"  style="width:180px;" [tabindex]="index" >
                               
-                            </mat-card>
-
-                            &nbsp;&nbsp;
-
-                            <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                  <mat-card-header>
-                                    
-                                    <mat-card-title>元件名稱</mat-card-title>
-                                    <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                  </mat-card-header>
-                                  <img mat-card-image src="">圖片
-                        <mat-card-content>
-                                    <p>
-                                      簡單描述
-                                    </p>
-                                  </mat-card-content>
-                                  <mat-card-actions>
-                                          <button mat-icon-button >
-                                                  <mat-icon>cloud_download</mat-icon>
-                                                </button>
-                                    <button mat-button>DOWNLOAD</button>
-                                  </mat-card-actions>
-                                  
-                                </mat-card>
-
-                                &nbsp;&nbsp;
-
-                                <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                      <mat-card-header>
-                                        
-                                        <mat-card-title>元件名稱</mat-card-title>
-                                        <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                      </mat-card-header>
-                                      <img mat-card-image src="">圖片
-                            <mat-card-content>
-                                        <p>
-                                          簡單描述
-                                        </p>
-                                      </mat-card-content>
-                                      <mat-card-actions>
-                                              <button mat-icon-button >
-                                                      <mat-icon>cloud_download</mat-icon>
-                                                    </button>
-                                        <button mat-button>DOWNLOAD</button>
-                                      </mat-card-actions>
-                                      
-                                    </mat-card>
-
-                                    &nbsp;&nbsp;
-
-                                    <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
                                           <mat-card-header>
                                             
-                                            <mat-card-title>元件名稱</mat-card-title>
-                                            <mat-card-subtitle>元件分類</mat-card-subtitle>
+                                            <mat-card-title>Wooden table</mat-card-title>
+                                            <mat-card-subtitle>
+                                              Furniture</mat-card-subtitle>
                                           </mat-card-header>
-                                          <img mat-card-image src="">圖片
-                                <mat-card-content>
+                                          <img mat-card-image src="http://static.goujianwu.com/metadata/1085761877286464/thumbnails/512_0.png" width="350"height="200">
+                                          <mat-card-content>
                                             <p>
-                                              簡單描述
+                                              This is a wooden table.
                                             </p>
                                           </mat-card-content>
                                           <mat-card-actions>
@@ -270,140 +392,7 @@
                                           
                                         </mat-card>
 
-                                        &nbsp;
 
-                                    <button mat-raised-button><mat-icon>keyboard_arrow_right</mat-icon></button></mat-grid-tile>
-            
-            <mat-grid-tile colspan='4'><h3>上傳紀錄</h3>
-              &nbsp;&nbsp;
-              <button mat-raised-button><mat-icon>keyboard_arrow_left</mat-icon></button>
-              &nbsp;
-              <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                          <mat-card-header>
-                            
-                            <mat-card-title>元件名稱</mat-card-title>
-                            <mat-card-subtitle>元件分類</mat-card-subtitle>
-                          </mat-card-header>
-                          <img mat-card-image src="">圖片
-                <mat-card-content>
-                            <p>
-                              簡單描述
-                            </p>
-                          </mat-card-content>
-                          <mat-card-actions>
-                                  <button mat-icon-button >
-                                          <mat-icon>cloud_download</mat-icon>
-                                        </button>
-                            <button mat-button>DOWNLOAD</button>
-                          </mat-card-actions>
-                          
-                        </mat-card>
 
-                        &nbsp;&nbsp;
-
-                        <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                              <mat-card-header>
-                                
-                                <mat-card-title>元件名稱</mat-card-title>
-                                <mat-card-subtitle>元件分類</mat-card-subtitle>
-                              </mat-card-header>
-                              <img mat-card-image src="">圖片
-                    <mat-card-content>
-                                <p>
-                                  簡單描述
-                                </p>
-                              </mat-card-content>
-                              <mat-card-actions>
-                                      <button mat-icon-button >
-                                              <mat-icon>cloud_download</mat-icon>
-                                            </button>
-                                <button mat-button>DOWNLOAD</button>
-                              </mat-card-actions>
-                              
-                            </mat-card>
-
-                            &nbsp;&nbsp;
-
-                            <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                  <mat-card-header>
-                                    
-                                    <mat-card-title>元件名稱</mat-card-title>
-                                    <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                  </mat-card-header>
-                                  <img mat-card-image src="">圖片
-                        <mat-card-content>
-                                    <p>
-                                      簡單描述
-                                    </p>
-                                  </mat-card-content>
-                                  <mat-card-actions>
-                                          <button mat-icon-button >
-                                                  <mat-icon>cloud_download</mat-icon>
-                                                </button>
-                                    <button mat-button>DOWNLOAD</button>
-                                  </mat-card-actions>
-                                  
-                                </mat-card>
-
-                                &nbsp;&nbsp;
-
-                                <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                      <mat-card-header>
-                                        
-                                        <mat-card-title>元件名稱</mat-card-title>
-                                        <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                      </mat-card-header>
-                                      <img mat-card-image src="">圖片
-                            <mat-card-content>
-                                        <p>
-                                          簡單描述
-                                        </p>
-                                      </mat-card-content>
-                                      <mat-card-actions>
-                                              <button mat-icon-button >
-                                                      <mat-icon>cloud_download</mat-icon>
-                                                    </button>
-                                        <button mat-button>DOWNLOAD</button>
-                                      </mat-card-actions>
-                                      
-                                    </mat-card>
-
-                                    &nbsp;&nbsp;
-
-                                    <mat-card class="post-tile"  style="width:200px;height:250px;" [tabindex]="index" >
-                    
-                                          <mat-card-header>
-                                            
-                                            <mat-card-title>元件名稱</mat-card-title>
-                                            <mat-card-subtitle>元件分類</mat-card-subtitle>
-                                          </mat-card-header>
-                                          <img mat-card-image src="">圖片
-                                <mat-card-content>
-                                            <p>
-                                              簡單描述
-                                            </p>
-                                          </mat-card-content>
-                                          <mat-card-actions>
-                                                  <button mat-icon-button >
-                                                          <mat-icon>cloud_download</mat-icon>
-                                                        </button>
-                                            <button mat-button>DOWNLOAD</button>
-                                          </mat-card-actions>
-                                          
-                                        </mat-card>
-
-                                        &nbsp;
-
-                                    <button mat-raised-button><mat-icon>keyboard_arrow_right</mat-icon></button></mat-grid-tile>
-            
-          </mat-grid-list>
-       
-
-        
-    </body>
-</html>
- 
+                                    </mat-grid-tile>
+                                    </mat-grid-list>
