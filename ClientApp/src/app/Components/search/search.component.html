@@ -6,12 +6,20 @@
   </button>
 <mat-form-field value="1"  style="width:500px;" >
   <input matInput placeholder="輸入關鍵字搜尋" >
+  
 </mat-form-field>
        
-<mat-grid-list style="width:1400px;" cols="7" rowHeight="400px">
+<mat-chip-list>
+  <mat-chip *ngFor="let tag of tags" (remove)="removeTag(tag)">
+    {{ tag }}
+    <mat-icon matChipRemove>cancel</mat-icon>
+  </mat-chip>
+</mat-chip-list>
+
+<mat-grid-list style="width:1400px;" cols="7" rowHeight="460px">
     <mat-grid-tile colspan="1">
 
-      <mat-nav-list style="width:200px;height:400px;">
+      <mat-nav-list style="width:200px;height:460px;">
 
           <mat-accordion>
       <mat-expansion-panel hideToggle="true">
