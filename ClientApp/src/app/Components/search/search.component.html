@@ -4,15 +4,20 @@
 <button mat-icon-button >
     <mat-icon>search</mat-icon>
   </button>
-<mat-form-field value="1"  style="width:500px;" >
-  <input matInput placeholder="輸入關鍵字搜尋" >
+<mat-form-field  class="example-chip-list" value="1"  style="width:500px;" >
+  <input matInput placeholder="輸入關鍵字搜尋" 
+  [matChipInputFor]="chipList"
+           [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+           [matChipInputAddOnBlur]="addOnBlur"
+           (matChipInputTokenEnd)="add($event)">
   
 </mat-form-field>
        
-<mat-chip-list>
-  <mat-chip *ngFor="let tag of tags" (remove)="removeTag(tag)">
-    {{ tag }}
-    <mat-icon matChipRemove>cancel</mat-icon>
+<mat-chip-list #chipList aria-label="Fruit selection">
+  <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable"
+  [removable]="removable" (removed)="remove(fruit)">
+  {{fruit.name}}
+    <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
   </mat-chip>
 </mat-chip-list>
 
